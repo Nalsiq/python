@@ -32,6 +32,4 @@ wiek=input("ile masz lat?")
 wiek=int(input("ile masz lat?"))
 
 #bbbbbbb
-print("aaaaaaaaaa")
-
-#llll
+print("aaaaa")
