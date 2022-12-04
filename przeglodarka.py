@@ -18,3 +18,4 @@ try:
     webbrowser.open(old_site)
 except:
     print("nie ma tej strony")
+#spytać się panią jak wyciągnać dany tekst ze strony internetwej, słownik, wisielec
