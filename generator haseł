@@ -1,0 +1,12 @@
+import urllib.request
+import re, sys
+import random
+import webbrowser
+
+
+list_of_word = ["l", "o", "1", "2","jablko", "koparka", "gamer", "e", "z" ]
+draw = random.randint(0,8)
+values = list_of_word[draw]
+
+print("Witaj w generatorze hasel")
+number_of_letters = int(input)("Napisz ilu literow chcesz haslo: ")
