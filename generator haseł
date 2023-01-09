@@ -4,9 +4,24 @@ import random
 import webbrowser
 
 
-list_of_word = ["l", "o", "1", "2","jablko", "koparka", "gamer", "e", "z" ]
-draw = random.randint(0,8)
-values = list_of_word[draw]
+list_of_word = ["4", "3", "1", "2",".", "?", ",", "_", "-", "5", "6", "7" "8", "9", "!", "&", "a", "A","Ą", "ą", "B", "b","C", "c","Ć","ć" ,"D", "d","E", "e","Ę", "ę", "F", "f","G", "g","H", "h","I", "i","J", "j","K", "k","L", "l","Ł", "ł","M", "m","N", "n","Ń","ń", "O", "o","P", "p","R", "r","S", "s","Ś", "ś", "T", "t","Q", "q","U", "u","W", "w","Y", "y","Z", "z","Ż", "ż","Ź" "ź", "x", "X" ]
+
+password = ""
+
 
 print("Witaj w generatorze hasel")
-number_of_letters = int(input)("Napisz ilu literow chcesz haslo: ")
+number_of_letters = input("Napisz ilu literow chcesz haslo: ")
+while not number_of_letters.isdigit():
+    number_of_letters = input("Napisz liczbe jeszcze raz: ")
+
+number_of_letters = int(number_of_letters)
+
+
+while number_of_letters !=  len(password):
+    draw = random.randint(0,len(list_of_word)-1)
+    content_of_passwords = list_of_word[draw]
+    password+= content_of_passwords
+    
+  
+
+print(f"To twoje hasło: {password}")
